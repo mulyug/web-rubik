@@ -1,0 +1,113 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500&display=swap');
+
+/* Основные стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Легкий голубой фон */
+    color: #333;
+}
+
+/* Заголовок */
+header {
+    background-color: #ff6347; /* Яркий томатный цвет */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 5px solid #ff4500; /* Тонкая линия снизу */
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Навигационное меню */
+nav {
+    background-color: #32cd32; /* Ярко-зеленый */
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center; /* Центрирование всех элементов */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #228b22; /* Тёмный зеленый при наведении */
+    color: #fff;
+}
+
+/* Контейнер для контента */
+.container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.container h2, .container h3 {
+    color: #ff6347; /* Цвет заголовков */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Подсветка для списков */
+.container ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.container ul li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Ссылки в контейнере */
+.container a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    background-color: #ff6347;
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Респонсив стили для меньших экранов */
+@media (max-width: 768px) {
+    nav a {
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+}
